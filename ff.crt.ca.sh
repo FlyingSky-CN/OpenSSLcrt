@@ -20,7 +20,7 @@ openssl genrsa -aes256 -out ./demoCA/private/cakey.pem 4096
 openssl req -new -sha256 \
     -key ./demoCA/private/cakey.pem \
     -out ./demoCA/private/ca.csr \
-    -subj "/C=CN/ST=SC/L=CD/O=XY/OU=FF/CN=XY.WWW"
+    -subj "/C=FS/ST=FS/L=FS/O=FS/OU=FS/CN=Atlantis"
 
 # 显示证书内容
 openssl req -text -noout -in ./demoCA/private/ca.csr

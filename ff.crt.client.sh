@@ -33,7 +33,7 @@ openssl genrsa -out "${OUTFILE}.key" 2048
 openssl req -new -sha256 \
     -key "${OUTFILE}.key" \
     -out "${OUTFILE}.csr" \
-    -subj "/C=CN/ST=SC/L=CD/O=XY/OU=FF/CN=${CNAME}" \
+    -subj "/C=FS/ST=FS/L=FS/O=FS/OU=FS/CN=${CNAME}" \
     -utf8
 
 # 用户证书扩展
